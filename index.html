@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Movie Seat Booking</title>
+  </head>
+  <body>
+    <main>
+      <div>
+        <label for="movies">Pick a movie: </label>
+        <select name="movies" id="movies">
+          <option id="movie1" value="10"> A New Hope ($10) </option>
+          <option id="movie2" value="11"> The Empire Strikes Back ($11)
+          </option>
+          <option id="movie3" value="15"> The Return of the Jedi ($15)
+          </option>
+          <option id="movie4" value="16"> The Phantom Menance ($16) </option>
+        </select>
+      </div>
+
+      <div id="legend">
+        <div class="legendBox">
+          <div class="seatL open"></div>
+          <label> Open </label>
+        </div>
+        <div class="legendBox">
+          <div class="seatL selected"></div>
+          <label> Selected </label>
+        </div>
+        <div class="legendBox">
+          <div class="seatL occupied"></div>
+          <label> Occupied </label>
+        </div>
+      </div>
+
+      <div id="screen"></div>
+
+      <div id="seats">
+        <div id="aisleA" class="aisle aisleA">
+          <div class="seat" id="a1"></div>
+          <div class="seat" id="a2"></div>
+          <div class="seat" id="a3"></div>
+          <div class="seat" id="a4"></div>
+          <div class="seat" id="a5"></div>
+          <div class="seat" id="a6"></div>
+        </div>
+        <div id="aisleB" class="aisle aisleB">
+          <div class="seat" id="b1"></div>
+          <div class="seat" id="b2"></div>
+          <div class="seat" id="b3"></div>
+          <div class="seat" id="b4"></div>
+          <div class="seat" id="b5"></div>
+          <div class="seat" id="b6"></div>
+        </div>
+        <div id="aisleC" class="aisle aisleC">
+          <div class="seat" id="c1"></div>
+          <div class="seat" id="c2"></div>
+          <div class="seat" id="c3"></div>
+          <div class="seat" id="c4"></div>
+          <div class="seat" id="c5"></div>
+          <div class="seat" id="c6"></div>
+        </div>
+        <div id="aisleD" class="aisle aisleD">
+          <div class="seat" id="d1"></div>
+          <div class="seat" id="d2"></div>
+          <div class="seat" id="d3"></div>
+          <div class="seat" id="d4"></div>
+          <div class="seat" id="d5"></div>
+          <div class="seat" id="d6"></div>
+        </div>
+        <div id="aisleE" class="aisle aisleE">
+          <div class="seat" id="e1"></div>
+          <div class="seat" id="e2"></div>
+          <div class="seat" id="e3"></div>
+          <div class="seat" id="e4"></div>
+          <div class="seat" id="e5"></div>
+          <div class="seat" id="e6"></div>
+        </div>
+        <div id="aisleF" class="aisle aisleF">
+          <div class="seat" id="f1"></div>
+          <div class="seat" id="f2"></div>
+          <div class="seat" id="f3"></div>
+          <div class="seat" id="f4"></div>
+          <div class="seat" id="f5"></div>
+          <div class="seat" id="f6"></div>
+        </div>
+        <div id="aisleG" class="aisle aisleG">
+          <div class="seat" id="g1"></div>
+          <div class="seat" id="g2"></div>
+          <div class="seat" id="g3"></div>
+          <div class="seat" id="g4"></div>
+          <div class="seat" id="g5"></div>
+          <div class="seat" id="g6"></div>
+        </div>
+        <div id="aisleH" class="aisle aisleH">
+          <div class="seat" id="h1"></div>
+          <div class="seat" id="h2"></div>
+          <div class="seat" id="h3"></div>
+          <div class="seat" id="h4"></div>
+          <div class="seat" id="h5"></div>
+          <div class="seat" id="h6"></div>
+        </div>
+      </div>
+
+      <p id="selection">You have selected <span id="seatCount">0</span> seats
+        for
+        a price of $<span id="price">0</span></p>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>

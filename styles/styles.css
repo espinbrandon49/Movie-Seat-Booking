@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body {
+  background-color: #242333;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  perspective: 1000px;
+}
+
+select {
+  border-radius: .25rem;
+  margin-left: .25rem;
+  border:0;
+  font-size: 1rem;
+  padding: .25rem .5rem;
+}
+
+.seatL, .seat {
+  background-color: #444451;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  height: 12px;
+  width: 15px;
+  margin: 3px;
+}
+
+#legend {
+  margin: 1.5em auto;
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #777;
+}
+
+.legendBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#screen {
+  background-color: #fff;
+  height: 70px;
+  width: 65%;
+  margin: 1.5rem auto;
+  transform: rotateX(-45deg);
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+}
+
+.selected {
+  background-color: #6feaf6;
+}
+
+.occupied {
+  background-color: #fff;
+}
+
+.aisle {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+
+.aisleB,
+.aisleF {
+  margin-right: 1.15rem;
+}
+
+.aisleA {
+  grid-area: aisleA;
+}
+
+.aisleB {
+  grid-area: aisleB;
+}
+
+.aisleC {
+  grid-area: aisleC;
+}
+
+.aisleD {
+  grid-area: aisleD;
+}
+
+.aisleE {
+  grid-area: aisleE;
+}
+
+.aisleF {
+  grid-area: aisleF;
+}
+
+.aisleG {
+  grid-area: aisleG;
+}
+
+.aisleH {
+  grid-area: aisleH;
+}
+
+#seats {
+  display: grid;
+  justify-content: center;
+  grid-template-areas:
+    "aisleA aisleB aisleC aisleD aisleE aisleF aisleG aisleH";
+}
+
+#selection {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+#seatCount, #price {
+  color: #6feaf6;;
+}
+
+.seat:not(.occupied):hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
