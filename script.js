@@ -52,5 +52,5 @@ function price() {
   document.getElementById("seatCount").innerText = seatCount;
   document.getElementById("price").innerText = price;
 }
-
+console.log(movies)
 document.getElementById("movies").addEventListener("change", () => price());
